@@ -1,4 +1,4 @@
-import { isspace, isdigit, isword, isabbv } from "./util";
+import { isspace, isdigit, isword, isabbv, isalpha } from "./util";
 
 enum TokenKind {
     UNKNOWN,
@@ -33,15 +33,15 @@ class Token {
 
 class Lexer {
     private cursor: number;
-    private abbv_ctx: string;
+    private short: string;
     readonly content: string;
     readonly tokens: Token[];
 
-    constructor(content: string, abbv_ctx: string = "") {
+    constructor(content: string) {
         this.content = content;
         this.cursor = 0;
         this.tokens = [];
-        this.abbv_ctx = abbv_ctx;
+        this.short = `${content[0].toLowerCase()}.`;
     }
 
     /**
@@ -86,7 +86,12 @@ class Lexer {
                     this.cursor += 1;
                 }
 
-                if (isabbv(abbv.join("")))
+                let shorten = abbv.slice(abbv.length - 2, abbv.length)
+                                  .join("");
+
+                if (isabbv(abbv.join(""))
+                    || (this.short == shorten
+                        && !isalpha(abbv[abbv.length - 3])))
                     content = abbv;
                 else
                     this.cursor = temp;
