@@ -40,7 +40,7 @@ class Parser {
                 else
                     str.push(" ");
             } else if (token.kind == TokenKind.OPEN_PAREN) {
-                str.push(" ");
+                if (i != 0) str.push(" ");
                 skip_next_space = true;
             }
 
@@ -55,26 +55,23 @@ class Parser {
     /**
      * Parse the word of the entry.
      */
-    parse_head(): string {
+    parse_head(): [string, number] {
+        let idx: number = 0;
         for (const token of this.lexer) {
             if (token.kind == TokenKind.DOT) break;
             else this.stack.push(token);
+            idx += 1;
         }
 
-        return this.construct(this.stack, true);
+        return [this.construct(this.stack, true), idx];
     }
 
-    /**
-     * Parse the body of the entry.
-     */
-    parse_body(): Definition {
-        let definition: Definition = {
+    new_definition(): Definition {
+        return {
             definition: "",
             examples: [],
-            synonyms: []
+            synonyms: [],
         };
-
-        return definition;
     }
 
     parse(): object {
@@ -85,7 +82,10 @@ class Parser {
         };
 
         const write_dict = (ctx: Context, clear: boolean) => {
-            const construct = this.construct(this.stack, clear);
+            let construct = this.construct(this.stack, clear);
+
+            if (construct[construct.length - 1] == ".")
+                construct = construct.slice(0, construct.length - 1);
 
             switch (ctx) {
                 case Context.DEFINITION:
@@ -97,10 +97,12 @@ class Parser {
             }
         }
 
-        entry.word = this.parse_head();
+        let end_word: number;
+        [entry.word, end_word] = this.parse_head();
         this.context = Context.DEFINITION;
+        entry.meanings.push(this.new_definition());
 
-        for (const token of this.lexer) {
+        for (const token of this.lexer.tokens.slice(end_word + 1)) {
             switch (token.kind) {
                 case TokenKind.NUMBER:
                     this.stack.push(token); break;
@@ -108,9 +110,18 @@ class Parser {
                 case TokenKind.COLON: {
                     write_dict(this.context, true);
                     if (this.context == Context.DEFINITION)
-                        this.context = Context.EXAMPLE
+                        this.context = Context.EXAMPLE;
                     else
-                        this.context = Context.SYNONYM
+                        this.context = Context.SYNONYM;
+
+                    break;
+                }
+
+                case TokenKind.SEMICOLON: {
+                    if (this.context == Context.EXAMPLE)
+                        write_dict(this.context, true);
+                    else
+                        this.stack.push(token);
 
                     break;
                 }
@@ -118,18 +129,19 @@ class Parser {
                 case TokenKind.DOT:
                 case TokenKind.QUESTION:
                 case TokenKind.EXCLAIMATION: {
-                    if (this.stack[this.stack.length - 1].content.length < 4) {
-                        let current = this.stack[this.stack.length - 1];
-                        if (current.content !== "1" && !isalpha(current.content)) {
-                            entry.meanings.push({
-                                definition: "",
-                                examples: <string[]>[],
-                                synonyms: <string[]>[]
-                            });
+                    let top = this.stack[this.stack.length - 1];
+                    if (this.stack.length > 0
+                        && top.kind == TokenKind.NUMBER
+                        && top.content.length < 3) {
+                        this.stack.pop();
+
+                        if (this.stack.length > 0)
+                            write_dict(this.context, true);
+
+                        if (!(top.content == "1" || isalpha(top.content))) {
+                            entry.meanings.push(this.new_definition());
                             m_idx += 1;
                         }
-                        this.stack.pop(); // pop except years
-                        if (this.stack.length > 0) write_dict(this.context, true);
 
                         this.context = Context.DEFINITION;
                     } else

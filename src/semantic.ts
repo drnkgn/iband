@@ -1,4 +1,5 @@
-import { Lexer, Token } from "./lexer";
+import { Lexer, Token, TokenKind } from "./lexer";
+import { isdigit } from "./util";
 
 // input:
 //     abah. 1. Cut made in a tree for felling, under-cut: a. nuan enda' manah,
@@ -103,10 +104,37 @@ class SemanticParser {
 
     next(): Semantic {
         let semantic = new Semantic();
+        let stack: string[] = [];
 
         if (this.semantics.length == 0)
             semantic.context = Context.START;
         else {
+            let token = this.iter.next().value as Token | undefined;
+
+            const consume = (predicate: (tok: Token | undefined) => boolean,
+                             on?: (tok: Token | undefined) => boolean): void => {
+                while (predicate(token) && token != undefined) {
+                    if (on && on(token))
+                        stack.push(token.content);
+                    token = this.iter.next().value as Token | undefined;
+                }
+
+                semantic.content = stack.join(" ");
+            }
+
+            switch (this.previous_ctx()) {
+                case Context.START:
+                    semantic.context = Context.ENTRY_WORD;
+                    consume((token) => token?.kind != TokenKind.DOT);
+                    break;
+                case Context.ENTRY_WORD:
+                    semantic.context = Context.NEW_DEFINITION;
+                    break;
+                case Context.NEW_DEFINITION:
+                    semantic.context = Context.DEFINITION;
+                    consume((token) => token?.kind != TokenKind.DOT);
+                    break;
+            }
         }
 
         this.semantics.push(semantic);

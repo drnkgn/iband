@@ -69,7 +69,7 @@ class Lexer {
          */
         const consume = (predicate: (str: string) => boolean,
                          kind: TokenKind,
-                         abbv: boolean = false) => {
+                         abbv: boolean = false): void => {
             while (predicate(this.content[this.cursor])) {
                 content.push(this.content[this.cursor]);
                 this.cursor += 1;
@@ -87,13 +87,14 @@ class Lexer {
                 }
 
                 let shorten = abbv.slice(abbv.length - 2, abbv.length)
-                                  .join("");
+                                  .join("")
+                                  .toLowerCase();
 
                 if (isabbv(abbv.join(""))
                     || (this.short == shorten
-                        && !isalpha(abbv[abbv.length - 3])))
+                        && !isalpha(abbv[abbv.length - 3]))) {
                     content = abbv;
-                else
+                } else
                     this.cursor = temp;
             }
 
