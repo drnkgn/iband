@@ -1,9 +1,10 @@
 {
-  "name": "dict",
+  "name": "iband-parser",
   "version": "1.0.0",
   "description": "",
   "main": "main.ts",
   "scripts": {
+      "build": "tsc && node dist/main.js"
   },
   "author": "",
   "license": "ISC",

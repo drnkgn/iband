@@ -3,11 +3,8 @@
     "word": "A-",
     "meanings": [
       {
-        "definition": "Represents sound of a in 'car'. The a in 'cat' is not used. The sound in 'cake' is rare, but usu. in Swk.M. for final -ai",
-        "examples": [
-          "written ei. Iban has no article, definite or indefinite, but uses num. cl. where necessary",
-          "e.g. batang, buah, igi', iko', iti'"
-        ],
+        "definition": "Represents sound of a in 'car'. The a in 'cat' is not used. The sound in 'cake' is rare, but usu. in Swk.M. for final -ai, written ei. Iban has no article, definite or indefinite, but uses num. cl. where necessary; e.g. batang, buah, igi', iko', iti'",
+        "examples": [],
         "synonyms": []
       }
     ]
@@ -199,6 +196,11 @@
   {
     "word": "abis",
     "meanings": [
+      {
+        "definition": "(or ambis)",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Everyone, all, the whole, entirely",
         "examples": [
@@ -503,6 +505,11 @@
     "word": "acu'",
     "meanings": [
       {
+        "definition": "(M.)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Provocation, incite, provoke, set on, interfere with in order to start a quarrel, acok",
         "examples": [
           "a. ia bangat meransang hati aku, he set me on (to quarrel)"
@@ -653,6 +660,11 @@
     "word": "adap",
     "meanings": [
       {
+        "definition": "(M., 'before', 'in front of', 'in the presence of'; hence)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Aspect, position",
         "examples": [
           "kini a. dapur kita'l where (in which position) are you putting your fireplace (kitchen)?",
@@ -700,6 +712,11 @@
     "word": "adat",
     "meanings": [
       {
+        "definition": "(Ar.)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Way of life, basic values, culture, accepted code of conduct, manners, and con-ventions. A. safeguards the state of affairs in which all parts of the universe are healthy and tranquil (celap, lantang) and in balance. Breaches of a. disturb this state and are visited by 'fines' or contributions to the ritual neces-sary to restore the balance and to allay the wrath, whether of individuals, the community, or the deities",
         "examples": [
           "TUNGGU. Gen. a. means custom, law, behaviour, tradition"
@@ -709,11 +726,16 @@
         ]
       },
       {
-        "definition": "(H.,. 2 nd Div.) Pig-tailed Macaque, NYUMBOH",
+        "definition": "Customary payment, a 'fine' (tunggu) in customary law, fee or honorarium (SABANG, upah)",
         "examples": [
           "kati a. kita' enti' orang ninggal-ka bini? what fine do you impose on a man who deserts his wife?",
           "berapa a. nuan enti' nuan bebunoh antu? what is your fee for (the rite of) killing the evil spirit? adau"
         ],
+        "synonyms": []
+      },
+      {
+        "definition": "(H.,. 2 nd Div.) Pig-tailed Macaque, NYUMBOH",
+        "examples": [],
         "synonyms": []
       },
       {
@@ -761,7 +783,7 @@
         "synonyms": []
       },
       {
-        "definition": "Preparation or service of food, etc",
+        "definition": "Preparation or service of food, etc.",
         "examples": [
           "a. ia manah endar, her arrangements for the food are excellent",
           "ia ngading-ka anak ia makai, she served her son",
@@ -928,7 +950,7 @@
         "definition": "Man's name",
         "examples": [
           "Datu A., ancestor of some Betong Malays, related to Vatu Ayu",
-          "A. Rantai Besi (Iron Chain) of the Ulu Ai who fought the Rajah in 19 th c"
+          "A. Rantai Besi (Iron Chain) of the Ulu Ai who fought the Rajah in 19 th c."
         ],
         "synonyms": []
       }
@@ -937,6 +959,11 @@
   {
     "word": "agi'",
     "meanings": [
+      {
+        "definition": "(M., lagi)",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "More (in comparison)",
         "examples": [
@@ -984,12 +1011,12 @@
         "synonyms": []
       },
       {
-        "definition": "Spear (sangkoh), unid",
+        "definition": "Spear (sangkoh), unid.",
         "examples": [],
         "synonyms": []
       },
       {
-        "definition": "Hornbill (kenyalang), unid",
+        "definition": "Hornbill (kenyalang), unid.",
         "examples": [],
         "synonyms": []
       },
@@ -1077,6 +1104,11 @@
     "word": "ai'",
     "meanings": [
       {
+        "definition": "(M., air)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Water, liquid, liquor, juice, sap",
         "examples": [
           "a. amat, plain or cold water",
@@ -1143,7 +1175,7 @@
     "word": "aidis",
     "meanings": [
       {
-        "definition": "Nyamok a., mosquito Aedes sp",
+        "definition": "Nyamok a., mosquito Aedes sp.",
         "examples": [],
         "synonyms": []
       }
@@ -1481,7 +1513,7 @@
       {
         "definition": "Bosom friend, term of address to a respected and much older person",
         "examples": [
-          "ia ngaka'-ka aku, he calls me a",
+          "ia ngaka'-ka aku, he calls me a.",
           "cf. akan"
         ],
         "synonyms": []
@@ -1557,6 +1589,11 @@
     "word": "akar",
     "meanings": [
       {
+        "definition": "(M.)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Creeper or anything used for binding or gen. as substitute for rotan (except in mat-making)",
         "examples": [
           "kami ka' ngambi' a. entuyut er) ggau berumah, we are going to collect Pitcher plant (creeper, as lashings) for house-building"
@@ -1574,7 +1611,7 @@
         "synonyms": []
       },
       {
-        "definition": "Munsang a., Palm Civet Paradoxurus sp",
+        "definition": "Munsang a., Palm Civet Paradoxurus sp.",
         "examples": [],
         "synonyms": []
       }
@@ -1584,7 +1621,7 @@
     "word": "akas",
     "meanings": [
       {
-        "definition": "Screw Pine, unid",
+        "definition": "Screw Pine, unid.",
         "examples": [
           "tikai a. dua lambar, tWoa- mats"
         ],
@@ -1705,6 +1742,11 @@
     "word": "aku'",
     "meanings": [
       {
+        "definition": "(M. aku)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Ngaku', treat as, acknowl-edge",
         "examples": [
           "ia ngaku' aku ka anak, he treats me as a son",
@@ -1760,6 +1802,11 @@
   {
     "word": "ala",
     "meanings": [
+      {
+        "definition": "(Or a.-a.)",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Uncooked, underdone, partly done",
         "examples": [
@@ -1848,7 +1895,7 @@
     "word": "alak",
     "meanings": [
       {
-        "definition": "Mulong a., garden flower Canna sp",
+        "definition": "Mulong a., garden flower Canna sp.",
         "examples": [],
         "synonyms": []
       }
@@ -1982,7 +2029,7 @@
     "word": "alau",
     "meanings": [
       {
-        "definition": "Buntak a., insect pest of padi, unid",
+        "definition": "Buntak a., insect pest of padi, unid.",
         "examples": [],
         "synonyms": []
       },
@@ -2090,7 +2137,7 @@
           "lubang nya' a., that hole is blocked",
           "ia ngalit-ka lubang, he stopped up the hole",
           "Perintah ngalit-ka jalai, Government interdicts the road (or, blocks a loophole)",
-          "a. burit, a. lubang, grasses (rumput), unid"
+          "a. burit, a. lubang, grasses (rumput), unid."
         ],
         "synonyms": []
       },
@@ -2187,6 +2234,11 @@
     "word": "alu",
     "meanings": [
       {
+        "definition": "(M.)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Pestle of hard wood used to pound padi, rice, etc., in a lesong",
         "examples": [
           "lubang a., hole in sadau floor above tempuan ruai through which the a. can rise when in use. After a death, an a. is laid across the top of the house steps to prevent the Sebayan entering, to whom it appears as a cobra"
@@ -2229,7 +2281,7 @@
         "synonyms": []
       },
       {
-        "definition": "A.-a., marine fish, Barracuda Spliyraena sp",
+        "definition": "A.-a., marine fish, Barracuda Spliyraena sp.",
         "examples": [],
         "synonyms": []
       }
@@ -2283,6 +2335,11 @@
   {
     "word": "alus",
     "meanings": [
+      {
+        "definition": "(M. halus, 'fine, delicate')",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Smooth, flat",
         "examples": [
@@ -2433,6 +2490,11 @@
     "word": "amat",
     "meanings": [
       {
+        "definition": "(or amai)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "True, real, certain, authentic",
         "examples": [
           "kati a. anak siduai nya'bagas bejalai? is it true their son is always away from home?",
@@ -2471,7 +2533,7 @@
         "synonyms": []
       },
       {
-        "definition": "Buloli a., bamboo, unid",
+        "definition": "Buloli a., bamboo, unid.",
         "examples": [],
         "synonyms": []
       }
@@ -2490,7 +2552,7 @@
         "synonyms": []
       },
       {
-        "definition": "Kulat a., bluish edible fungus of recently burned clearings, unid",
+        "definition": "Kulat a., bluish edible fungus of recently burned clearings, unid.",
         "examples": [
           "indu' kulat a., insect, unid. that frequents the fungus"
         ],
@@ -2587,7 +2649,7 @@
         "synonyms": []
       },
       {
-        "definition": "(M.) Block, surround to catch, per-a",
+        "definition": "(M.) Block, surround to catch, per-a.",
         "examples": [
           "jalai ia ambis di-a. kami, all his ways (of escape) are blocked by us"
         ],
@@ -2612,6 +2674,11 @@
   {
     "word": "ambau",
     "meanings": [
+      {
+        "definition": "(M., 'bamboo float on boat's sides')",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Rise up, start",
         "examples": [
@@ -2972,7 +3039,7 @@
     "word": "ampan",
     "meanings": [
       {
-        "definition": "Marik a., long bead necklaces, per-a",
+        "definition": "Marik a., long bead necklaces, per-a.",
         "examples": [],
         "synonyms": []
       }
@@ -3166,7 +3233,7 @@
         "synonyms": []
       },
       {
-        "definition": "Kulat a. bah, edible fungus, unid",
+        "definition": "Kulat a. bah, edible fungus, unid.",
         "examples": [],
         "synonyms": []
       }
@@ -3281,7 +3348,7 @@
     "word": "amus",
     "meanings": [
       {
-        "definition": "Very small red ant (semut), unid",
+        "definition": "Very small red ant (semut), unid.",
         "examples": [
           "kayu' nya' be-a., there are a. ants in that tree"
         ],
@@ -3482,6 +3549,11 @@
     "word": "anda",
     "meanings": [
       {
+        "definition": "(Skr., 'egg, cosmic egg', name of Shiva)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Always lucky, prosperous",
         "examples": [
           "ia a. bumai, he always gets good harvests",
@@ -3526,7 +3598,7 @@
     "word": "andak",
     "meanings": [
       {
-        "definition": "Attack, assault, fight by advancing and retiring as Iban do, be-a.-a",
+        "definition": "Attack, assault, fight by advancing and retiring as Iban do, be-a.-a.",
         "examples": [],
         "synonyms": []
       }
@@ -3675,7 +3747,7 @@
     "word": "andu",
     "meanings": [
       {
-        "definition": "Creeper with edible fruit, unid",
+        "definition": "Creeper with edible fruit, unid.",
         "examples": [],
         "synonyms": []
       }
@@ -3730,7 +3802,7 @@
         "synonyms": []
       },
       {
-        "definition": "Kuju'-a., Heron Ardca sp",
+        "definition": "Kuju'-a., Heron Ardca sp.",
         "examples": [],
         "synonyms": []
       }
@@ -3870,7 +3942,7 @@
         "synonyms": []
       },
       {
-        "definition": "Siduai ia ma' a., the one is carrying the other pick-a- back",
+        "definition": "Siduai ia ma' a., the one is carrying the other pick-a-back",
         "examples": [],
         "synonyms": []
       },
@@ -4125,7 +4197,7 @@
         "synonyms": []
       },
       {
-        "definition": "Ai' a., spring tide, pasang ray a",
+        "definition": "Ai' a., spring tide, pasang ray a.",
         "examples": [],
         "synonyms": []
       }
@@ -4335,7 +4407,7 @@
         "synonyms": []
       },
       {
-        "definition": "Sip or suck out the juice of fruit, etc",
+        "definition": "Sip or suck out the juice of fruit, etc.",
         "examples": [
           "tupai ka' nganit pinang, squirrels will suck out the juice of areca nuts"
         ],
@@ -4354,7 +4426,7 @@
       {
         "definition": "Fate, destiny, amulet for success in hunting or fishing",
         "examples": [
-          "ia bisi' a. (or peng-a.), he has an a",
+          "ia bisi' a. (or peng-a.), he has an a.",
           "ia a. berikan, he is successful in fishing",
           "bai' a. ia bulih padi, it is his destiny to have good harvests"
         ],
@@ -4408,6 +4480,11 @@
   {
     "word": "ansa",
     "meanings": [
+      {
+        "definition": "(Skr., hamsa) Goose, itit a. ansah",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Grind, sharpen, asah, kilir",
         "examples": [
@@ -4688,7 +4765,7 @@
         "synonyms": []
       },
       {
-        "definition": "Entertainment, hospitality, peng-a",
+        "definition": "Entertainment, hospitality, peng-a.",
         "examples": [
           "manah bendar a. ia enggau aku, he did me very well"
         ],
@@ -4708,7 +4785,7 @@
     "word": "antin",
     "meanings": [
       {
-        "definition": "(M., anting-anting) Ear-rings, ear pendants, a.-a",
+        "definition": "(M., anting-anting) Ear-rings, ear pendants, a.-a.",
         "examples": [
           "ia be-a., she is wearing ear-rings"
         ],
@@ -4772,7 +4849,12 @@
     "word": "antu",
     "meanings": [
       {
-        "definition": "Spirit, demon, or devil that can enter into men, e.g",
+        "definition": "(M., hantu)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
+        "definition": "Spirit, demon, or devil that can enter into men, e.g.",
         "examples": [
           "a. engkerasak, spirit of malicious gossip or scandal-mongering",
           "a. kepapas, spirit of envy",
@@ -4792,7 +4874,7 @@
         "synonyms": []
       },
       {
-        "definition": "(in divination) Left medial lobe of liver (atau) relating to a",
+        "definition": "(in divination) Left medial lobe of liver (atau) relating to a.",
         "examples": [],
         "synonyms": []
       },
@@ -4802,9 +4884,9 @@
         "synonyms": []
       },
       {
-        "definition": "Buloh a., bamboo, unid",
+        "definition": "Buloh a., bamboo, unid.",
         "examples": [
-          "kulat butoh a. ray a, inedible fungus, unid"
+          "kulat butoh a. ray a, inedible fungus, unid."
         ],
         "synonyms": []
       },
@@ -4821,7 +4903,7 @@
         ]
       },
       {
-        "definition": "A. pala', head trophy, dried head of an enemy, (also) balang, kelekuyang, niur, etc",
+        "definition": "A. pala', head trophy, dried head of an enemy, (also) balang, kelekuyang, niur, etc.",
         "examples": [
           "kabak a. pala', old head trophies",
           "behead, pumpong, tajin. On returning from a successful foray, the boat is decorated with isang and a paean (panjong) raised. The trophies are smoked in a hut (langkau) built for the purpose over special hearthstones (bedilang) and are presented to the women at the head of the steps, who sing them home (taku, timang) and feast them. Afterwards the heads are hung in baskets (ringkaj from a ring-frame (bengkong) over the hearth in the ruai. It used to be necessary to get a new head before formal release from mourning (ulit), or to show evidence of bravery"
@@ -4883,6 +4965,11 @@
   {
     "word": "anu'",
     "meanings": [
+      {
+        "definition": "(often pron. ano')",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "(M.) Some (thing), i.e., not specified",
         "examples": [
@@ -5118,7 +5205,7 @@
       {
         "definition": "A. Sali, typical yokel",
         "examples": [
-          "empelawa' A. Sali, red spider, unid"
+          "empelawa' A. Sali, red spider, unid."
         ],
         "synonyms": []
       }
@@ -5183,6 +5270,11 @@
   {
     "word": "apas",
     "meanings": [
+      {
+        "definition": "(or rapas)",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Out of sight, almost beyond earshot",
         "examples": [
@@ -5326,7 +5418,7 @@
         "synonyms": []
       },
       {
-        "definition": "Kulat a., edible fungus on palms, unid",
+        "definition": "Kulat a., edible fungus on palms, unid.",
         "examples": [],
         "synonyms": []
       }
@@ -5336,7 +5428,7 @@
     "word": "apis",
     "meanings": [
       {
-        "definition": "Small plaited rotan bag for betel (pinang), etc",
+        "definition": "Small plaited rotan bag for betel (pinang), etc.",
         "examples": [
           "KANDI"
         ],
@@ -5347,6 +5439,11 @@
   {
     "word": "apit",
     "meanings": [
+      {
+        "definition": "(M.)",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Squeeze, press, kepit, kapit",
         "examples": [
@@ -5370,11 +5467,13 @@
     ]
   },
   {
-    "word": "apoi! Interjection expressing surprise, wonder, admiration, apu, po: a.! ambis padi aku di-empa' jani', oh dear! all my padi is eaten up by pigs",
+    "word": "apoi",
     "meanings": [
       {
-        "definition": "",
-        "examples": [],
+        "definition": "Interjection expressing surprise, wonder, admiration, apu, po",
+        "examples": [
+          "a.! ambis padi aku di-empa' jani', oh dear! all my padi is eaten up by pigs"
+        ],
         "synonyms": []
       }
     ]
@@ -5419,7 +5518,7 @@
         "synonyms": []
       },
       {
-        "definition": "Gerama' a., swamp crab, unid",
+        "definition": "Gerama' a., swamp crab, unid.",
         "examples": [],
         "synonyms": []
       },
@@ -5637,6 +5736,11 @@
   {
     "word": "arap",
     "meanings": [
+      {
+        "definition": "(M., harap)",
+        "examples": [],
+        "synonyms": []
+      },
       {
         "definition": "Faith, confidence, trust, rely on",
         "examples": [
@@ -5975,7 +6079,7 @@
         "synonyms": []
       },
       {
-        "definition": "Disappointed, deceived, a.-a",
+        "definition": "Disappointed, deceived, a.-a.",
         "examples": [
           "a. bendar aku tadi', I was taken in just now",
           "ia ngasa'-ka anembiak enggau roti, he deceived the children with (a promise of) cakes"
@@ -6040,7 +6144,7 @@
         "synonyms": []
       },
       {
-        "definition": "Feel, feeling, sensation, Per-a",
+        "definition": "Feel, feeling, sensation, Per-a.",
         "examples": [
           "enda' ber-a. celap nuan? don't you feel the cold?",
           "aku ber-a. ngelu, I feel giddy",
@@ -6095,11 +6199,11 @@
         ]
       },
       {
-        "definition": "(M.) Plants yielding sour fruit (used in preserves and for flavouring), esp. trees of Mangifera spp",
+        "definition": "(M.) Plants yielding sour fruit (used in preserves and for flavouring), esp. trees of Mangifera spp.",
         "examples": [
           "a. empelam, M. indica L. and others",
           "a. jawa, Tamarind",
-          "a. lanjoli, unid"
+          "a. lanjoli, unid."
         ],
         "synonyms": [
           "a. lanyat, M. lagenifera Griff.; a. lempaung, Baccaurea lanceolata Miq. (Muell. - Arg.), gen. PUAK; a. panas, unid.; a. paya', Salacca conferta Griff., RIDAN; a. rebah, M. havilandi Ridl"
@@ -6622,6 +6726,11 @@
     "word": "aus",
     "meanings": [
       {
+        "definition": "(M., haus)",
+        "examples": [],
+        "synonyms": []
+      },
+      {
         "definition": "Thirst, thirsty, be thirsty",
         "examples": [
           "enggau madam-ka a., a drink to quench thirst",
@@ -6646,10 +6755,15 @@
     "word": "awa",
     "meanings": [
       {
-        "definition": "She became his wife and he cut up the first child to become useful plants",
+        "definition": "(Ar., hawa) Siti A., woman who was cut from the calf of the first man's leg when he was living alone among aur bamboo",
         "examples": [
           "PEREMAN"
         ],
+        "synonyms": []
+      },
+      {
+        "definition": "She became his wife and he cut up the first child to become useful plants",
+        "examples": [],
         "synonyms": []
       },
       {
@@ -6795,7 +6909,7 @@
         "definition": "(M., ayah) Term of address for men of speaker's father's generation, term of reference for the hearer's father",
         "examples": [
           "aku betemu enggau a. ensana', I met your father the day before yesterday",
-          "nuan patut ngaya'-ka aku, you should call me a"
+          "nuan patut ngaya'-ka aku, you should call me a."
         ],
         "synonyms": []
       },
@@ -6944,7 +7058,7 @@
     "word": "ayat",
     "meanings": [
       {
-        "definition": "Pinang a., wild areca palm, unid",
+        "definition": "Pinang a., wild areca palm, unid.",
         "examples": [],
         "synonyms": []
       },
@@ -6990,10 +7104,8 @@
     "word": "ayu",
     "meanings": [
       {
-        "definition": "(Skr., 'life, vitality') Shade or image of the living, reflecting gen. state of body and soul, with no independent existence as the SEMENGAT (soul) has and distinct from SUKAT (life span) and SEBAYAN (the dead) which have no a. The a. are like bamboo or banana and grow in clumps at Bangkit on a broad ridge, Bukit Menebong Jawa, where they are tended by Menyayan, chief of the celestial manang, esp. in rites for the sick (SAUT). If evil spirits (antu) attack the a. (they cut it down and burn it for their farming) the body sickens",
-        "examples": [
-          "when the soul leaves the body in dreams or sickness, the a. also sickens and wilts. It withers and dies altogether when the soul departs this world at death. Menyayan transplants (nusup) the a. from (family) clump to clump (kampong genturong) as necessary and clears away those that are dead"
-        ],
+        "definition": "(Skr., 'life, vitality') Shade or image of the living, reflecting gen. state of body and soul, with no independent existence as the SEMENGAT (soul) has and distinct from SUKAT (life span) and SEBAYAN (the dead) which have no a. The a. are like bamboo or banana and grow in clumps at Bangkit on a broad ridge, Bukit Menebong Jawa, where they are tended by Menyayan, chief of the celestial manang, esp. in rites for the sick (SAUT). If evil spirits (antu) attack the a. (they cut it down and burn it for their farming) the body sickens; when the soul leaves the body in dreams or sickness, the a. also sickens and wilts. It withers and dies altogether when the soul departs this world at death. Menyayan transplants (nusup) the a. from (family) clump to clump (kampong genturong) as necessary and clears away those that are dead",
+        "examples": [],
         "synonyms": []
       },
       {
