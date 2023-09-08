@@ -1,9 +1,21 @@
 import { parse } from "./src/lib";
-import { readFileSync, writeFileSync } from "fs";
+import path from "path";
+import { readdirSync, readFileSync, writeFileSync  } from "fs";
 
-let lines = readFileSync("../corpus/a.txt", "utf8").split("\n");
-let entries = [];
-for (const line of lines.slice(0, lines.length - 1)) {
-    entries.push(parse(line));
+const CORPUS_PATH = "../corpus";
+const INDEX_PATH  = "../index";
+
+let filenames = readdirSync(CORPUS_PATH);
+
+for (const filename of filenames) {
+    let content = readFileSync(`${CORPUS_PATH}/${filename}`, "utf8").split("\n");
+    let outname = `${path.parse(filename).name}.json`;
+    let entries = [];
+
+    console.log(`Parsing ${filename}...`);
+    for (const line of content.slice(0, content.length - 1)) {
+        entries.push(parse(line));
+    }
+
+    writeFileSync(`${INDEX_PATH}/${outname}`, JSON.stringify(entries));
 }
-writeFileSync("../index/a.json", JSON.stringify(entries));

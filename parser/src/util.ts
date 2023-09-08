@@ -27,6 +27,7 @@ const ABBREVIATIONS: Set<string> = new Set([
     "Hind.",                    // Hindi
     "incl.",                    // include, including
     "Jav.",                     // Javanese (Malay)
+    "Kunth.",
     "lit.",                     // literally
     "M.",                       // Malay(s)
     "num.", "cl.",              // numeral classifier
@@ -45,6 +46,7 @@ const ABBREVIATIONS: Set<string> = new Set([
     "unid.",                    // unidentified, not found
     "usu.",                     // usually
     "W.",                       // Wilkinson (dicitionary); west
+    "Warb.",
 ]);
 
 function isalpha(str: string): boolean {
