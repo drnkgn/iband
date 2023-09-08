@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-      "build": "tsc && node dist/main.js"
+      "build": "tsc",
+      "parse": "node dist/main.js"
   },
   "author": "",
   "license": "ISC",
