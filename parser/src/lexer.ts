@@ -42,6 +42,8 @@ class Lexer {
         this.cursor = 0;
         this.tokens = [];
         this.short = `${content[0].toLowerCase()}.`;
+
+        this.tokenize();
     }
 
     /**
@@ -155,7 +157,6 @@ class Lexer {
     }
 
     *[Symbol.iterator]() {
-        if (this.tokens.length == 0) this.tokenize();
         for (let i = 0; i < this.tokens.length; ++i) {
             yield this.tokens[i];
         }

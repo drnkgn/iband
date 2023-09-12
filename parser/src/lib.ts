@@ -10,6 +10,7 @@ type Definition = {
     definition: string,
     examples: string[],
     synonyms: string[],
+    note: string,
 };
 
 function new_def(): Definition {
@@ -17,6 +18,7 @@ function new_def(): Definition {
         definition: "",
         examples: [],
         synonyms: [],
+        note: "",
     };
 }
 
@@ -45,6 +47,9 @@ function parse(str: string): Entry {
                 r.meanings[i].synonyms.push(s.content);
                 break;
 
+            case Semantic.NOTE:
+                r.meanings[i].note = s.content;
+                break;
             default:
                 console.error("Unreachable");
         }

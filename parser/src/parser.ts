@@ -1,4 +1,5 @@
 import { Lexer, Token, TokenKind } from "./lexer";
+import { isupper } from "./util";
 
 enum Semantic {
     UNKNOWN,
@@ -6,6 +7,7 @@ enum Semantic {
     DEFINITION,
     EXAMPLE,
     SYNONYM,
+    NOTE,
 }
 
 class Context {
@@ -65,7 +67,7 @@ class Parser {
     parse(): Context[] {
         let cursmtc = Semantic.UNKNOWN;
 
-        for (const token of this.lexer) {
+        this.lexer.tokens.forEach((token, idx) => {
             switch (token.kind) {
                 case TokenKind.NUMBER: {
                     this.stack.push(token);
@@ -73,12 +75,13 @@ class Parser {
                 }
 
                 case TokenKind.COLON: {
-                    this.contexts.push(new Context(this.construct(), cursmtc));
-
-                    if (cursmtc == Semantic.DEFINITION)
+                    if (cursmtc == Semantic.DEFINITION) {
+                        this.contexts.push(new Context(this.construct(),
+                                                       cursmtc));
                         cursmtc = Semantic.EXAMPLE;
-                    else
-                        cursmtc = Semantic.SYNONYM;
+                    } else
+                        this.stack.push(token);
+                        // cursmtc = Semantic.SYNONYM;
 
                     break;
                 }
@@ -95,20 +98,35 @@ class Parser {
                 case TokenKind.DOT:
                 case TokenKind.QUESTION:
                 case TokenKind.EXCLAIMATION: {
-                    let top = this.stack[this.stack.length - 1];
+                    let prev_token = this.stack[this.stack.length - 1];
 
                     if (cursmtc == Semantic.UNKNOWN) {
-                        this.contexts.push(new Context(this.construct(), Semantic.ENTRY_WORD));
+                        this.contexts.push(new Context(this.construct(),
+                                                       Semantic.ENTRY_WORD));
                         cursmtc = Semantic.DEFINITION;
+                    /* if previous token is a number that might look like a section */
                     } else if (this.stack.length > 0
-                            && top.kind == TokenKind.NUMBER
-                            && top.content.length < 3) {
+                               && prev_token.kind == TokenKind.NUMBER
+                               && prev_token.content.length < 3) {
                         this.stack.pop();
 
                         if (this.stack.length > 0)
-                            this.contexts.push(new Context(this.construct(), cursmtc));
+                            this.contexts.push(new Context(this.construct(),
+                                                           cursmtc));
 
                         cursmtc = Semantic.DEFINITION;
+                    /* if current semantic is still example */
+                    } else if (cursmtc == Semantic.EXAMPLE) {
+                        if (idx != this.lexer.tokens.length - 1) {
+                            let peek = this.lexer.tokens[idx + 1];
+
+                            if (isupper(peek.content[0])) {
+                                this.contexts.push(new Context(this.construct(),
+                                                               cursmtc));
+                                cursmtc = Semantic.NOTE;
+                            } else
+                                this.stack.push(token);
+                        }
                     } else
                         this.stack.push(token);
 
@@ -118,7 +136,7 @@ class Parser {
                 default:
                     this.stack.push(token);
             }
-        }
+        });
 
         this.contexts.push(new Context(this.construct(), cursmtc));
 

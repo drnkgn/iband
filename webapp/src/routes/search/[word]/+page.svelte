@@ -8,7 +8,12 @@
             <h1>{data.entry.word}</h1>
             <ol>
                 {#each data.entry.meanings as meaning}
-                    <li>{meaning.definition}</li>
+                    <li>
+                        {meaning.definition}.
+                        {#if meaning.note.length > 0}
+                            <a>[more info]</a>
+                        {/if}
+                    </li>
                     {#if meaning.examples.length > 0}
                         <blockquote>
                             {#each meaning.examples as example}
@@ -47,6 +52,10 @@
 
     li {
         margin: 1rem 0;
+    }
+
+    a {
+        color: rgb(47, 129, 247);
     }
 
     blockquote {
