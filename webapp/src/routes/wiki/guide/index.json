@@ -1,0 +1,498 @@
+[
+    {
+        "en": "amulet",
+        "iba": "batu, pengaroh"
+    },
+    {
+        "en": "ancestors",
+        "iba": "Sebayan, Petara"
+    },
+    {
+        "en": "animal",
+        "iba": "jelu"
+    },
+    {
+        "en": "augury",
+        "iba": "burong"
+    },
+    {
+        "en": "bard",
+        "iba": "lemambang"
+    },
+    {
+        "en": "bird",
+        "iba": "burong"
+    },
+    {
+        "en": "bird deity",
+        "iba": "Lang"
+    },
+    {
+        "en": "birth",
+        "iba": "ada"
+    },
+    {
+        "en": "boat",
+        "iba": "perau'"
+    },
+    {
+        "en": "charms",
+        "iba": "batu, pengaroh, ubat"
+    },
+    {
+        "en": "child",
+        "iba": "anak"
+    },
+    {
+        "en": "cockfighting",
+        "iba": "sabong, manok"
+    },
+    {
+        "en": "colour",
+        "iba": "cura"
+    },
+    {
+        "en": "creation",
+        "iba": "Entala, Petara"
+    },
+    {
+        "en": "cotton",
+        "iba": "taya', ubong"
+    },
+    {
+        "en": "custom",
+        "iba": "adat"
+    },
+    {
+        "en": "customary law",
+        "iba": "pemali, tunggu"
+    },
+    {
+        "en": "dance",
+        "iba": "ajat"
+    },
+    {
+        "en": "day",
+        "iba": "hari"
+    },
+    {
+        "en": "dead (the)",
+        "iba": "Sebayan"
+    },
+    {
+        "en": "dead (land of the)",
+        "iba": "Mandai"
+    },
+    {
+        "en": "death rites",
+        "iba": "parai"
+    },
+    {
+        "en": "deity",
+        "iba": "Petara"
+    },
+    {
+        "en": "demon",
+        "iba": "antu, gerasi"
+    },
+    {
+        "en": "divination",
+        "iba": "tenong"
+    },
+    {
+        "en": "diving contest",
+        "iba": "selam"
+    },
+    {
+        "en": "drink, liquor",
+        "iba": "ai', tuak"
+    },
+    {
+        "en": "drum",
+        "iba": "gendang"
+    },
+    {
+        "en": "dye",
+        "iba": "selup, takar"
+    },
+    {
+        "en": "earth (ground)",
+        "iba": "tanah"
+    },
+    {
+        "en": "earth (this world)",
+        "iba": "dunya"
+    },
+    {
+        "en": "earth diety",
+        "iba": "Pulang Gana"
+    },
+    {
+        "en": "family",
+        "iba": "bilik, kaban"
+    },
+    {
+        "en": "farm",
+        "iba": "umai"
+    },
+    {
+        "en": "female",
+        "iba": "indu'"
+    },
+    {
+        "en": "festival",
+        "iba": "gawai"
+    },
+    {
+        "en": "fine (customary)",
+        "iba": "tunggu"
+    },
+    {
+        "en": "fire",
+        "iba": "api"
+    },
+    {
+        "en": "fish",
+        "iba": "ikan"
+    },
+    {
+        "en": "fish poison",
+        "iba": "tubai"
+    },
+    {
+        "en": "fish trap",
+        "iba": "bubu"
+    },
+    {
+        "en": "forest",
+        "iba": "kampong, babas"
+    },
+    {
+        "en": "games",
+        "iba": "main"
+    },
+    {
+        "en": "garden",
+        "iba": "kebun"
+    },
+    {
+        "en": "giant",
+        "iba": "antu, gerasi"
+    },
+    {
+        "en": "gong",
+        "iba": "tawak"
+    },
+    {
+        "en": "grave, tomb",
+        "iba": "pendam"
+    },
+    {
+        "en": "head",
+        "iba": "pala'"
+    },
+    {
+        "en": "head trophy",
+        "iba": "antu pala'"
+    },
+    {
+        "en": "hearth",
+        "iba": "dapur"
+    },
+    {
+        "en": "heavens",
+        "iba": "langit"
+    },
+    {
+        "en": "house",
+        "iba": "rumah"
+    },
+    {
+        "en": "hunt",
+        "iba": "giga', asu"
+    },
+    {
+        "en": "incest",
+        "iba": "mali"
+    },
+    {
+        "en": "insect",
+        "iba": "indu' utai"
+    },
+    {
+        "en": "invocation",
+        "iba": "sampi, pengap"
+    },
+    {
+        "en": "land",
+        "iba": "tanah, menoa"
+    },
+    {
+        "en": "law (customary)",
+        "iba": "pemali, tunggu"
+    },
+    {
+        "en": "longhouse",
+        "iba": "rumah panjai"
+    },
+    {
+        "en": "loom (weaving)",
+        "iba": "tumpoh"
+    },
+    {
+        "en": "male",
+        "iba": "laki"
+    },
+    {
+        "en": "marriage",
+        "iba": "jadi, pinang"
+    },
+    {
+        "en": "money",
+        "iba": "duit"
+    },
+    {
+        "en": "month, moon",
+        "iba": "bulan"
+    },
+    {
+        "en": "mourning",
+        "iba": "pana, ulit"
+    },
+    {
+        "en": "mourning poem",
+        "iba": "sabak"
+    },
+    {
+        "en": "mouth organ",
+        "iba": "kerurai"
+    },
+    {
+        "en": "music",
+        "iba": "gendang"
+    },
+    {
+        "en": "music (strings)",
+        "iba": "sapei'"
+    },
+    {
+        "en": "night",
+        "iba": "malam"
+    },
+    {
+        "en": "offerings",
+        "iba": "piring"
+    },
+    {
+        "en": "ogre",
+        "iba": "antu, gerasi"
+    },
+    {
+        "en": "omen",
+        "iba": "burong"
+    },
+    {
+        "en": "ordeal",
+        "iba": "selam, besudi'"
+    },
+    {
+        "en": "origins",
+        "iba": "Petara, Kayong, Menggin, Mengkabau"
+    },
+    {
+        "en": "padi cycle",
+        "iba": "padi, umai"
+    },
+    {
+        "en": "pillar",
+        "iba": "tiang"
+    },
+    {
+        "en": "plait",
+        "iba": "anyam"
+    },
+    {
+        "en": "plantation",
+        "iba": "kebun"
+    },
+    {
+        "en": "poetry",
+        "iba": "main"
+    },
+    {
+        "en": "prayer",
+        "iba": "sampi, sembiang"
+    },
+    {
+        "en": "property",
+        "iba": "keresa"
+    },
+    {
+        "en": "relatives",
+        "iba": "kaban"
+    },
+    {
+        "en": "restrictions",
+        "iba": "penti"
+    },
+    {
+        "en": "rice",
+        "iba": "padi, umai"
+    },
+    {
+        "en": "riddles",
+        "iba": "entelah"
+    },
+    {
+        "en": "rite, rituals",
+        "iba": "gawa', gawai"
+    },
+    {
+        "en": "river",
+        "iba": "ai', sungai"
+    },
+    {
+        "en": "sacred plants",
+        "iba": "indu', padi"
+    },
+    {
+        "en": "sacrifice",
+        "iba": "biau, gayang"
+    },
+    {
+        "en": "shaman",
+        "iba": "manang"
+    },
+    {
+        "en": "shaman rites",
+        "iba": "pelian, saut"
+    },
+    {
+        "en": "shrine",
+        "iba": "pandong, ranyai"
+    },
+    {
+        "en": "sky",
+        "iba": "langit"
+    },
+    {
+        "en": "snake",
+        "iba": "ular"
+    },
+    {
+        "en": "snake deities",
+        "iba": "Panggau"
+    },
+    {
+        "en": "soldier",
+        "iba": "soldadu"
+    },
+    {
+        "en": "soul",
+        "iba": "semengat, ayu"
+    },
+    {
+        "en": "spear",
+        "iba": "sangkoh"
+    },
+    {
+        "en": "spinning (thread)",
+        "iba": "gasing"
+    },
+    {
+        "en": "spinning (for fish)",
+        "iba": "acar"
+    },
+    {
+        "en": "spirit",
+        "iba": "antu, ayu, semengat"
+    },
+    {
+        "en": "spirit (drink)",
+        "iba": "arak"
+    },
+    {
+        "en": "spirit (tutelary)",
+        "iba": "yang, tua'"
+    },
+    {
+        "en": "star",
+        "iba": "bintang"
+    },
+    {
+        "en": "stone",
+        "iba": "batu"
+    },
+    {
+        "en": "storm",
+        "iba": "ribut"
+    },
+    {
+        "en": "stringed instruments",
+        "iba": "sapei'"
+    },
+    {
+        "en": "sword",
+        "iba": "duku'"
+    },
+    {
+        "en": "taboo",
+        "iba": "mali, kudi'"
+    },
+    {
+        "en": "talisman",
+        "iba": "batu, pengaroh"
+    },
+    {
+        "en": "tattoo",
+        "iba": "pantang"
+    },
+    {
+        "en": "thread",
+        "iba": "ubong"
+    },
+    {
+        "en": "tomb",
+        "iba": "pendam"
+    },
+    {
+        "en": "tree",
+        "iba": "kayu'"
+    },
+    {
+        "en": "war",
+        "iba": "kayau"
+    },
+    {
+        "en": "water",
+        "iba": "ai'"
+    },
+    {
+        "en": "weave (cloth)",
+        "iba": "tenun"
+    },
+    {
+        "en": "weave (mats)",
+        "iba": "anyam"
+    },
+    {
+        "en": "wood",
+        "iba": "kayu'"
+    },
+    {
+        "en": "woman",
+        "iba": "indu'"
+    },
+    {
+        "en": "wind",
+        "iba": "angin"
+    },
+    {
+        "en": "world",
+        "iba": "dunya"
+    },
+    {
+        "en": "year",
+        "iba": "taun"
+    }
+]

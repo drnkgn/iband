@@ -1,0 +1,130 @@
+[
+    {
+        "abbv": "acc. to",
+        "expand": "according to (author)"
+    },
+    {
+        "abbv": "Ar.",
+        "expand": "Arabic"
+    },
+    {
+        "abbv": "c.",
+        "expand": "century or circa"
+    },
+    {
+        "abbv": "Ch.",
+        "expand": "China, Chinese"
+    },
+    {
+        "abbv": "D.",
+        "expand": "Dutch"
+    },
+    {
+        "abbv": "Div.",
+        "expand": "Administrative Division of Swk."
+    },
+    {
+        "abbv": "Eng.",
+        "expand": "English"
+    },
+    {
+        "abbv": "esp.",
+        "expand": "expecially"
+    },
+    {
+        "abbv": "fig.",
+        "expand": "figuratively"
+    },
+    {
+        "abbv": "gen.",
+        "expand": "generally"
+    },
+    {
+        "abbv": "H.",
+        "expand": "Howell & Bailey (dictionary)"
+    },
+    {
+        "abbv": "Hind.",
+        "expand": "Hindi"
+    },
+    {
+        "abbv": "incl.",
+        "expand": "include, including"
+    },
+    {
+        "abbv": "Jav.",
+        "expand": "Javanese (Malay)"
+    },
+    {
+        "abbv": "lit.",
+        "expand": "literally"
+    },
+    {
+        "abbv": "M.",
+        "expand": "Malay(s)"
+    },
+    {
+        "abbv": "num. cl.",
+        "expand": "numeral classifier"
+    },
+    {
+        "abbv": "obs.",
+        "expand": "obsolete"
+    },
+    {
+        "abbv": "opp. (of)",
+        "expand": "opposite (antonym)"
+    },
+    {
+        "abbv": "orig.",
+        "expand": "originally"
+    },
+    {
+        "abbv": "Pers.",
+        "expand": "Persian"
+    },
+    {
+        "abbv": "poet.",
+        "expand": "poetic"
+    },
+    {
+        "abbv": "Port.",
+        "expand": "Portuguese"
+    },
+    {
+        "abbv": "prob.",
+        "expand": "probably"
+    },
+    {
+        "abbv": "pron.",
+        "expand": "pronounced, pronounciation"
+    },
+    {
+        "abbv": "S.",
+        "expand": "Scott (dictionary); south"
+    },
+    {
+        "abbv": "Skr.",
+        "expand": "Sanskrit"
+    },
+    {
+        "abbv": "sp., spp.",
+        "expand": "species"
+    },
+    {
+        "abbv": "Swk., Swk.M.",
+        "expand": "Sarawak, Sarawak Malay"
+    },
+    {
+        "abbv": "unid.",
+        "expand": "unidentified"
+    },
+    {
+        "abbv": "usu.",
+        "expand": "usually"
+    },
+    {
+        "abbv": "W.",
+        "expand": "Wilkinson (dictionary); west"
+    }
+]
