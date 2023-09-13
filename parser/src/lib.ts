@@ -9,7 +9,6 @@ type Entry = {
 type Definition = {
     definition: string,
     examples: string[],
-    synonyms: string[],
     note: string,
 };
 
@@ -17,7 +16,6 @@ function new_def(): Definition {
     return {
         definition: "",
         examples: [],
-        synonyms: [],
         note: "",
     };
 }
@@ -43,9 +41,9 @@ function parse(str: string): Entry {
                 r.meanings[i].examples.push(s.content);
                 break;
 
-            case Semantic.SYNONYM:
-                r.meanings[i].synonyms.push(s.content);
-                break;
+            // case Semantic.SYNONYM:
+            //     r.meanings[i].synonyms.push(s.content);
+            //     break;
 
             case Semantic.NOTE:
                 r.meanings[i].note = s.content;
