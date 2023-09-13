@@ -48,7 +48,8 @@ class Parser {
                     skip_next_space = false;
                 else
                     str.push(" ");
-            } else if (token.kind == TokenKind.OPEN_PAREN) {
+            } else if (token.kind == TokenKind.OPEN_PAREN
+                       || token.kind == TokenKind.DOLLAR) {
                 if (i != 0) str.push(" ");
                 skip_next_space = true;
             }
@@ -93,6 +94,12 @@ class Parser {
                         this.stack.push(token);
 
                     break;
+                }
+
+                case TokenKind.CARET: {
+                    this.contexts.push(new Context(this.construct(), cursmtc));
+
+                    cursmtc = Semantic.NOTE;
                 }
 
                 case TokenKind.DOT:

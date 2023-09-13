@@ -51,6 +51,7 @@ function parse(str: string): Entry {
                 r.meanings[i].note = s.content;
                 break;
             default:
+                console.log(`${s}`);
                 console.error("Unreachable");
         }
     }

@@ -8,12 +8,14 @@ enum TokenKind {
     NEWLINE,
     COMMA,
     DOT,
+    DOLLAR,
     EXCLAIMATION,
     QUESTION,
     COLON,
     SEMICOLON,
     OPEN_PAREN,
     CLOSE_PAREN,
+    CARET,
     PUNCT,
 }
 
@@ -128,6 +130,10 @@ class Lexer {
                     token.kind = TokenKind.OPEN_PAREN; break;
                 case ")":
                     token.kind = TokenKind.CLOSE_PAREN; break;
+                case "^":
+                    token.kind = TokenKind.CARET; break;
+                case "$":
+                    token.kind = TokenKind.DOLLAR; break;
                 default:
                     token.kind = TokenKind.PUNCT;
             }
