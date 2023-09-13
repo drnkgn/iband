@@ -9,7 +9,7 @@
     </div>
     <div>
         <h1>Stats</h1>
-        <p>Currently <span>{data.stats.total}</span> words have been indexed.</p>
+        <p>Currently, <span>{data.stats.total}</span> words have been indexed.</p>
     </div>
 </section>
 
@@ -33,5 +33,11 @@
     span {
         font-size: 20px;
         font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+        div {
+            width: 80%;
+        }
     }
 </style>
