@@ -2,7 +2,7 @@
     import index from "./index.json";
 </script>
 
-<div>
+<div class="content">
     <h1>Quick Guide</h1>
     <p>
         To some of the longer and more important entries in the dictionary:
@@ -20,20 +20,6 @@
 </div>
 
 <style>
-    div {
-        max-width: 55%;
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    p {
-        line-height: 26px;
-        color: var(--darkergray);
-    }
-
     table {
         margin-left: 2rem;
         color: var(--darkergray);

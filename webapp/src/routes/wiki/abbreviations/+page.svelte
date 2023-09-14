@@ -2,7 +2,7 @@
     import index from "./index.json";
 </script>
 
-<div>
+<div class="content">
     <h1>Abbreviations</h1>
     <p>
         Common English abbreviations are used for units of length, weight,
@@ -25,20 +25,6 @@
 </div>
 
 <style>
-    div {
-        max-width: 55%;
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    p {
-        line-height: 26px;
-        color: var(--darkergray);
-    }
-
     table {
         margin-left: 2rem;
         color: var(--darkergray);

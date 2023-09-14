@@ -1,35 +1,11 @@
 <script>
-    import XMark from "./XMark.svelte";
-    import { goto } from "$app/navigation";
-    import { onMount } from "svelte";
-
-    let inputRef;
-
-    function handleSearch(e) {
-        if (e.key === "Enter")
-            goto(`/search/${inputRef.value}`);
-
-    }
-
-    function handleClear() {
-        if (inputRef.value !== "")
-            inputRef.value = "";
-    }
+    import House from "$lib/assets/House.svelte";
+    import SearchBar from "$lib/components/SearchBar.svelte";
 </script>
 
 <header>
-    <div>
-        <input
-            name="search-word"
-            type="search"
-            placeholder="Search for a word"
-            on:keydown={handleSearch}
-            bind:this={inputRef}
-            />
-        <span on:click={handleClear}>
-            <XMark size={{x: "15px", y: "15px"}} />
-        </span>
-    </div>
+    <a title="Home" href="/"><House size={{x: "20px", y: "20px"}}/></a>
+    <SearchBar style="width:55%;" />
 </header>
 
 <style>
@@ -42,41 +18,19 @@
         box-shadow: var(--bs-medium);
     }
 
-    div {
-        display: flex;
-        align-items: center;
-        width: 55%;
-        padding: 0.7rem;
-        border: 2px var(--gray) solid;
-        border-radius: 20px;
+    a {
+        margin: 0.5rem;
     }
 
-    div:focus-within {
-        border: 2px gray solid;
-    }
-
-    span {
-        height: 15px;
-    }
-
-    span:hover {
+    a:hover {
         cursor: pointer;
     }
 
-    input {
-        width: 100%;
-        border: none;
-    }
-
-    input:focus {
-        outline: none;
-    }
-
-    :global(.xmark) {
+    :global(.house) {
         fill: var(--gray);
     }
 
-    :global(span:hover .xmark) {
+    :global(a:hover .house) {
         fill: gray;
     }
 </style>
