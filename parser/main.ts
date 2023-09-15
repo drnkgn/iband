@@ -43,8 +43,8 @@ function main() {
     writeFileSync(`${INDEX_PATH}/index.json`, JSON.stringify(words));
     console.log("Saving indexed words to index.json...");
 
-    writeFileSync(`${INDEX_PATH}/log.json`, JSON.stringify(stats));
-    console.log("Saving logs to logs.json...");
+    writeFileSync(`${INDEX_PATH}/stats.json`, JSON.stringify(stats));
+    console.log("Saving logs to stats.json...");
 }
 
 main();
