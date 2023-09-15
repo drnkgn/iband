@@ -27,7 +27,7 @@
             <h1>Oops</h1>
             <p>
                 It seems like the word you were trying to search does not
-                exists. Try to check your spelling again.
+                exists. Try check your spelling again.
             </p>
         {/if}
     </div>

@@ -1,11 +1,14 @@
 <script>
+    import { getContext } from "svelte";
     import House from "$lib/assets/House.svelte";
     import SearchBar from "$lib/components/SearchBar.svelte";
+
+    const wordIndex = getContext("word-index");
 </script>
 
 <header>
     <a title="Home" href="/"><House size={{x: "20px", y: "20px"}}/></a>
-    <SearchBar style="width:55%;" />
+    <SearchBar style="width:55%;" input={wordIndex} />
 </header>
 
 <style>

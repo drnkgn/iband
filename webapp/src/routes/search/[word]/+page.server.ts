@@ -9,7 +9,9 @@ export const load: PageServerLoad = async ({ params }) => {
             { encoding: "utf8" }
         )
     );
-    const entry = data.find((ele: Entry) => ele.word == params.word);
+    const entry = data.find(
+        (ele: Entry) => ele.word.toLowerCase() == params.word
+    );
 
     return {
         found: entry !== undefined,
