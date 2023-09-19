@@ -42,20 +42,29 @@ class Parser {
         let str: string[] = [];
         let skip_next_space = false;
 
-        this.stack.forEach((token, i) => {
-            if (token.kind == TokenKind.TEXT || token.kind == TokenKind.NUMBER) {
-                if (i == 0 || skip_next_space)
+        for (let i = 0; i < this.stack.length; ++i) {
+            switch (this.stack[i].kind) {
+                case TokenKind.TEXT:
+                case TokenKind.NUMBER:
+                    if (i == 0 || skip_next_space)
+                        skip_next_space = false;
+                    else
+                        str.push(" ");
+
+                    break;
+
+                case TokenKind.OPEN_PAREN:
+                case TokenKind.DOLLAR:
+                    if (i != 0) str.push(" ");
+                    skip_next_space = true;
+                    break;
+
+                default:
                     skip_next_space = false;
-                else
-                    str.push(" ");
-            } else if (token.kind == TokenKind.OPEN_PAREN
-                       || token.kind == TokenKind.DOLLAR) {
-                if (i != 0) str.push(" ");
-                skip_next_space = true;
             }
 
-            str.push(token.content);
-        });
+            str.push(this.stack[i].content);
+        };
 
         // trims redundant dots at the end of the result
         if (str[str.length - 1] == ".") str.pop();

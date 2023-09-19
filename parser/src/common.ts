@@ -8,6 +8,7 @@ const VALID_PUNCT: Set<string> = new Set([
 
 const ABBREVIATIONS: Set<string> = new Set([
     "acc.",                     // according (to)
+    "approx.",                  // approximately
     "Ar.",                      // Arabic
     "Br.",                      // Brunei (Malay)
     "c.",                       // circa (in italic); century
