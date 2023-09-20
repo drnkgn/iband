@@ -6,6 +6,7 @@
     export let style;
     export let input;
 
+    let fuse = new Fuse([]);
     let inputRef;
     let inputVal = "";
     let results = [];
@@ -17,11 +18,10 @@
 
     function handleOnChange(e) {
         inputVal = e.target.value;
-        if (input[inputVal[0]] !== undefined)
-            results = new Fuse(input[inputVal[0]])
-                .search(inputVal)
-                .slice(0, 10);
-        else
+        if (input[inputVal[0]] !== undefined) {
+            fuse.setCollection(input[inputVal[0]]);
+            results = fuse.search(inputVal).slice(0, 10);
+        } else
             results = [];
     }
 
@@ -60,10 +60,14 @@
         <ul class="search-result" style={style}>
             {#if results.length > 0}
                 {#each results as result }
-                    <li on:click={handleClickedPredict}>{result.item}</li>
+                    <li>
+                        <button on:click={handleClickedPredict}>
+                            {result.item}
+                        </button>
+                    </li>
                 {/each}
             {:else}
-                <li>No results found</li>
+                <li><button>No results found</button></li>
             {/if}
         </ul>
     </div>
@@ -122,11 +126,16 @@
         outline: none;
     }
 
-    li {
+    button {
+        width: 100%;
+        border: none;
+        background: none;
         padding: 0.7em;
+        text-align: left;
+        color: gray;
     }
 
-    li:hover {
+    button:hover {
         background: var(--gray);
         color: var(--darkgray);
         cursor: pointer;

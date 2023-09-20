@@ -8,7 +8,7 @@
             <h1>{data.entry.word}</h1>
             <ol>
                 {#each data.entry.meanings as meaning}
-                    <li>
+                    <li class="definition">
                         {meaning.definition}.
                         {#if meaning.note.length > 0}
                             <a>[more info]</a>
@@ -26,10 +26,20 @@
         {:else}
             <h1>Oops</h1>
             <p>
-                It seems like the word you were trying to search does not
-                exists. Try check your spelling again.
+                We couldn't find <i>{data.query}</i>. Try check your spelling
+                again.
             </p>
         {/if}
+    </div>
+    <div class="card">
+        <h1>Words that might interest you</h1>
+        <ul>
+            {#each data.suggestions as suggestion}
+                <li>
+                    <a href={`/search/${suggestion}`}>{suggestion}</a>
+                </li>
+            {/each}
+        </ul>
     </div>
 </section>
 
@@ -42,7 +52,7 @@
     div {
         width: 60%;
         height: fit-content;
-        padding: 1rem;
+        margin: 1rem;
     }
 
     h1 {
@@ -50,7 +60,12 @@
         padding-bottom: 1rem;
     }
 
-    li {
+    ul {
+        list-style: none;
+        columns: 4;
+    }
+
+    .definition {
         margin: 1rem 0;
     }
 

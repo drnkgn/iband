@@ -1,10 +1,6 @@
-import { readFile } from "fs/promises"
+import { getStats } from "$lib/util/dictionary";
 import type { PageServerLoad } from "./$types";
 
 export const load: PageServerLoad = async () => {
-    const stats: { total: number } = JSON.parse(
-        await readFile("../index/stats.json", { encoding: "utf8" })
-    );
-
-    return { stats: stats }
+    return { stats: await getStats() }
 }
